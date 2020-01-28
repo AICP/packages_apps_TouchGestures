@@ -11,6 +11,12 @@ LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_PRIVATE_PLATFORM_APIS := true
 
+LOCAL_STATIC_ANDROID_LIBRARIES := \
+    androidx.core_core \
+    androidx.preference_preference \
+    AicpGear-preference \
+    AicpGear-util
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include frameworks/base/packages/SettingsLib/common.mk
